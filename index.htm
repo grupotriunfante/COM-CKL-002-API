@@ -153,14 +153,17 @@
       <script>
         const atividades = [
           ["08h00 - 08h10", "Realizar a Previa","-","WhatsApp/Celular","Acionar Gerente Comercial"],
-          ["08h00 - 08h50", "Fazer a planilha do amancio","COM-POP-002-API","SICF", "Acionar a Arco"],
-          ["11h00 - 12h00", "Realizar a reunião Planner","-","Teams", "Acionar Gerente Comercial"],
-          ["14h00 - 15h00", "Fazer o Raio-X","-","SICF", "Acionar os vendedores"],
-          ["15h00 - 15h30", "Realizar os acompanhamentos","-", "SICF", "Acionar Supervisores ou Vendedores"],
-          ["15h30 - 16h00","Fazer o MRV","-", "SICF","Acionar o Supervisor de Vendas"],
-          ["16h00 - 17h30","Fazer as campanhas","-", "SICF", "Acionar o Supervisor de Vendas"],
-          ["17h30 - 18h00", "Realizar o ajuste de roteiro","COM-POP-003-API", "Portal", "Acionar gerente comercial"],
-
+          ["08h10 - 08h30", "Imprimir as Bonificações","-","WhatsApp/Celular", "Acionar Gerente Comercial"],
+          ["08h30 - 09h00", "Realizar o controle de separação da Logistica","-", "Excel", "Acionar Gerente Comercial"],
+          ["10h30 - 12h00", "Realizar o Planner","-", "Planner", "Acionar Gerente Comercial"],
+          ["14h00 - 14h10", "Realizar o relatório do sistema SICF para Ingleza","-", "SICF", "Acionar Gerente Comercial"],
+          ["14h10 - 14h30", "Realizar o acompanhamento","-", "SICF", "Acionar Gerente Comercial"],
+          ["15h10 - 16h00", "Realizar o ajuste de Roteiro conforme os vendedores solicitam","-", "WhatsApp/Celular", "Acionar Supervisor ou Vendedor"],
+          ["16h00 - 16h30", "Realizar as solicitações dos clientes sem compra","-", "SICF", "Acionar Supervisor ou Vendedor"],
+          ["Segunda-feira às 09h30 - 10h30", "Realizar o relatório de fornecedores","-", "SICF", "Acionar Gerente Comercial"],
+          ["Terça e Quinta-feira às 14h30 - 15h10", "Ligar para a Equipe","-", "WhatsApp/Celular", "Acionar Gerente Comercial"],
+          ["Segunda, Quarta e Sexta-feira às 13h30 - 14h00", "Realizar o acompanhamento do mês dos vendedores (Raio-X)","-", "SICF", "Acionar Gerente Comercial"],
+          ["Segunda, Quarta e Sexta-feira às 16h30 - 18h00", "Realizar as campanhas","-", "SICF", "Acionar Gerente Comercial"],
           
         ];
 
@@ -251,7 +254,7 @@
     formData.append("data", data);
     formData.append("unidade", unidade);
 
-    fetch("https://script.google.com/macros/s/AKfycbxrJ_hxpawRNOp0s7whO4jQ0bbLW5ADp1eaDHZKyQF5Ctpk3N86SwCnbSxzceKbrUwt/exec", {
+    fetch("https://script.google.com/macros/s/AKfycbxMkmQCIOsAbxZQOrPbNrlSNV-WFJAK1jSiLXVLdnNs2gTVLfs2yspF6NNZly1Jq1DO/exec", {
       method: "POST",
       body: formData
     })
